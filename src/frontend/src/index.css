@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Mebeee Himalaya color palette */
+    /* White */
+    --background: 1 0 0;
+    --foreground: 0.12 0.01 260;
+    /* Off-white #F6F6F4 */
+    --card: 0.972 0.003 90;
+    --card-foreground: 0.12 0.01 260;
+    --popover: 1 0 0;
+    --popover-foreground: 0.12 0.01 260;
+    /* Deep slate #26373C */
+    --primary: 0.285 0.038 210;
+    --primary-foreground: 0.985 0 0;
+    --secondary: 0.965 0.003 90;
+    --secondary-foreground: 0.285 0.038 210;
+    --muted: 0.965 0.003 90;
+    /* Muted #6B6B6B */
+    --muted-foreground: 0.495 0.005 260;
+    --accent: 0.97 0.005 90;
+    --accent-foreground: 0.285 0.038 210;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* #E6E6E6 */
+    --border: 0.908 0.003 90;
+    --input: 0.908 0.003 90;
+    --ring: 0.285 0.038 210;
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+    --sidebar: 0.285 0.038 210;
+    --sidebar-foreground: 0.985 0 0;
+    --sidebar-primary: 0.985 0 0;
+    --sidebar-primary-foreground: 0.285 0.038 210;
+    --sidebar-accent: 0.32 0.038 210;
+    --sidebar-accent-foreground: 0.985 0 0;
+    --sidebar-border: 0.32 0.038 210;
+    --sidebar-ring: 0.985 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .font-serif-display {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+
+  .section-label {
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+}
